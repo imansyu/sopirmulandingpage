@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daftar Mitra Sopir - Sopirmu</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Gabung Jadi Sopir - Sopirmu</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -13,32 +14,60 @@
   <nav class="navbar">
     <div class="navbar-container">
       <img src="assets/logo.png" alt="Sopirmu Logo" class="navbar-logo" />
-      <ul class="navbar-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="fitur.html">Fitur</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="join-driver.html" class="btn-sopir">Daftar Sopir</a></li>
+      <ul class="navbar-menu" id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html#layanan">Layanan</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="join-driver.html" class="btn-sopir active">Gabung Sopir</a></li>
       </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
   </nav>
 
-  <!-- Form Section -->
-  <section class="form-section">
-    <img src="assets/logo.png" alt="Logo Sopirmu" class="form-logo" />
-    <h1 class="form-title">Daftar Sebagai Mitra Sopir</h1>
-    <p class="form-subtitle">Pilih jenis kendaraan yang ingin kamu daftarkan:</p>
-    <div class="driver-options">
-      <a href="https://driverapp.sopirmu.com/motor" class="driver-btn">🛵 Daftar sebagai Driver Motor</a>
-      <a href="https://driverapp.sopirmu.com/mobil" class="driver-btn">🚗 Daftar sebagai Driver Mobil</a>
+  <!-- Join Driver Form Section -->
+  <section class="join-driver-section">
+    <div class="form-container">
+      <h1>Gabung Jadi Mitra Sopirmu</h1>
+      <p>Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda.</p>
+      <form class="driver-form">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Nomor HP Aktif</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="email">Email (Opsional)</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="city">Kota Domisili</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="vehicle">Jenis Kendaraan</label>
+        <select id="vehicle" name="vehicle" required>
+          <option value="">-- Pilih --</option>
+          <option value="motor">Motor</option>
+          <option value="mobil">Mobil</option>
+        </select>
+
+        <button type="submit" class="cta-button">Kirim Formulir</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    © 2025 Sopirmu.com | PT Sopirmu Teknologi Nusantara<br />
-    Jl. Nusa Indah No.58, Condongcatur, DIY Yogyakarta 55281<br />
-    📧 support@sopirmu.com | 📞 0809-5140-38299
+    <div class="footer-content">
+      <img src="assets/logo.png" alt="Sopirmu Logo" class="footer-logo" />
+      <p>© 2025 Sopirmu.com | PT Sopirmu Teknologi Nusantara</p>
+      <p>📍 Yogyakarta | 📧 support@sopirmu.com | 📞 0895-1403-8299</p>
+    </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("active");
+    }
+  </script>
 
 </body>
 </html>

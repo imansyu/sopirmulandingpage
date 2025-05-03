@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sopirmu.com - Transportasi Digital Indonesia</title>
+  <title>Sopirmu - Transportasi Online Aman & Terjangkau</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -14,81 +14,104 @@
   <nav class="navbar">
     <div class="navbar-container">
       <img src="assets/logo.png" alt="Sopirmu Logo" class="navbar-logo" />
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="navbar-menu" id="nav-menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Beranda</a></li>
         <li><a href="#layanan">Layanan</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="join-driver.html" class="btn-sopir">Daftar Sopir</a></li>
+        <li><a href="#cara-kerja">Cara Kerja</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="join-driver.html" class="btn-sopir">Gabung Sopir</a></li>
       </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
   </nav>
 
-  <!-- Wave SVG -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="width: 100%; display: block;">
-    <path fill="#4dd0e1" fill-opacity="1"
-      d="M0,192L60,186.7C120,181,240,171,360,154.7C480,139,600,117,720,128C840,139,960,181,1080,176C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-    </path>
-  </svg>
-
-  <!-- Hero Header -->
-  <header>
-    <img src="assets/logo.png" alt="Logo Sopirmu" class="logo fade-in" />
-    <p class="fade-in">Solusi Transportasi Digital Aman & Terjangkau di Indonesia</p>
-    <div class="store-buttons fade-in">
-      <a href="https://play.google.com" target="_blank">
-        <img src="assets/google-play-badge.png" alt="Download on Google Play" />
-      </a>
-      <a href="https://www.apple.com/app-store/" target="_blank">
-        <img src="assets/app-store-badge.png" alt="Download on App Store" />
-      </a>
+  <!-- Hero Section -->
+  <section class="hero-v2">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Sopirmu App</h1>
+        <p class="tagline">Solusi Transportasi Online Aman, Murah & Terpercaya</p>
+        <div class="store-badges">
+          <a href="#"><img src="assets/app-store-badge.png" alt="App Store"></a>
+          <a href="#"><img src="assets/google-play-badge.png" alt="Google Play"></a>
+        </div>
+        <p class="soon">AKAN SEGERA RILIS DI PLAYSTORE</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/mockup-iphone.png" alt="Mockup Sopirmu App" />
+      </div>
     </div>
-    <h3 class="fade-in" style="margin-top: 1rem; color: #2a2929;">
-      AKAN SEGERA RILIS SOPIRMU APP DI PLAYSTORE
-    </h3>
-  </header>
+  </section>
 
-  <!-- Kendaraan Section -->
-  <section class="car-section" id="layanan">
-    <div class="vehicle-icons fade-in">
-      <img src="assets/motor_icon.png" alt="Ikon Motor Sopirmu" class="vehicle" />
-      <img src="assets/mobil.png" alt="Ilustrasi Mobil Sopirmu" class="vehicle" />
-    </div>
-    <h1 class="fade-in" style="margin-top: 1rem; color: #171616;">PILIH KENDARAANMU</h1>
-    <div class="car-cards fade-in">
-      <div class="car-card">
-        <i class="fas fa-motorcycle service-icon"></i>
+  <!-- Layanan -->
+  <section class="fitur-section" id="layanan">
+    <h2 class="section-title">Layanan Kami</h2>
+    <div class="fitur-cards">
+      <div class="fitur-card">
+        <i class="fas fa-motorcycle fitur-icon"></i>
         <h3>Motor</h3>
-        <p>Layanan cepat dan hemat untuk kebutuhan harian.</p>
+        <p>Solusi cepat dan hemat untuk perjalanan harian.</p>
         <div class="price">Rp12.500 / perjalanan</div>
       </div>
-      <div class="car-card">
-        <i class="fas fa-car-side service-icon"></i>
+      <div class="fitur-card">
+        <i class="fas fa-car-side fitur-icon"></i>
         <h3>Mobil</h3>
-        <p>Kendaraan nyaman dengan AC untuk perjalanan santai.</p>
+        <p>Kenyamanan berkendara dengan harga terjangkau.</p>
         <div class="price">Rp30.000 / perjalanan</div>
       </div>
-      <div class="car-card">
-        <i class="fas fa-user-shield service-icon"></i>
+      <div class="fitur-card">
+        <i class="fas fa-user-shield fitur-icon"></i>
         <h3>Sopirmu+</h3>
-        <p>Driver terbaik dengan perlindungan asuransi.</p>
+        <p>Pengemudi terpilih dengan layanan premium & asuransi.</p>
         <div class="price">Premium</div>
       </div>
     </div>
   </section>
 
+  <!-- Cara Kerja -->
+  <section class="work-section" id="cara-kerja">
+    <h2 class="section-title">Cara Kerja Sopirmu</h2>
+    <div class="work-steps">
+      <div class="step">
+        <i class="fas fa-motorcycle step-icon"></i>
+        <h4>Langkah 1</h4>
+        <h3><b>1. Pilih Kendaraan</b></h3>
+        <p>Motor atau mobil? Kamu bebas pilih sesuai kebutuhan.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-map-marker-alt step-icon"></i>
+        <h4>Langkah 2</h4>
+        <h3><b>2. Tentukan Lokasi</b></h3>
+        <p>Masukkan titik jemput dan tujuan kamu lewat aplikasi.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-smile-beam step-icon"></i>
+        <h4>Langkah 3</h4>
+        <h3><b>3. Nikmati Perjalanan</b></h3>
+        <p>Driver kami akan menjemput dan mengantar kamu dengan aman.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Join Driver -->
+  <section class="cta-section">
+    <h2>Gabung Jadi Mitra Sopir</h2>
+    <p>Daftar sekarang dan mulai hasilkan pendapatan setiap hari.</p>
+    <a href="join-driver.html" class="cta-button">Daftar Sekarang</a>
+  </section>
+
   <!-- Footer -->
   <footer>
-    © 2025 Sopirmu.com | PT Sopirmu Teknologi Nusantara<br />
-    Jl. Nusa Indah No.58, Condongcatur, DIY Yogyakarta 55281<br />
-    📧 support@sopirmu.com | 📞 089514038299
+    <div class="footer-content">
+      <img src="assets/logo.png" alt="Sopirmu Logo" class="footer-logo" />
+      <p>© 2025 Sopirmu.com | PT Sopirmu Teknologi Nusantara</p>
+      <p>📍 Yogyakarta, Indonesia | 📧 support@sopirmu.com | 📞 0895-1403-8299</p>
+    </div>
   </footer>
 
-  <!-- Script -->
   <script>
     function toggleMenu() {
-      const menu = document.getElementById("nav-menu");
-      menu.classList.toggle("active");
+      document.getElementById("nav-menu").classList.toggle("active");
     }
   </script>
 

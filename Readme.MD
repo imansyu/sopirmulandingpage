@@ -19,3 +19,25 @@ landingpage/
 └── js/
     └── (optional later)         ⚙️ Script animasi/WA float/AOS
 
+
+
+
+
+Versi 2
+
+sopirmu-landingpage/
+├── index.html
+├── about.html
+├── join-driver.html
+│
+├── css/
+│   └── style.css
+│
+├── assets/
+│   ├── logo.png
+│   ├── mockup-iphone.png
+│   ├── app-store-badge.png
+│   ├── google-play-badge.png
+│   └── background-pattern.svg
+│
+└── README.md (opsional penjelasan repo GitHub)
