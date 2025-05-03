@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitur Aplikasi - Sopirmu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    .fitur-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+      color: #222;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .fitur-section h1 {
+      color: #007bff;
+      margin-bottom: 2rem;
+    }
+
+    .fitur-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .fitur-card {
+      background-color: #f2f9ff;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .fitur-card h3 {
+      margin-bottom: 0.5rem;
+      color: #007bff;
+    }
+
+    .fitur-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background-color: #005a9c;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .fitur-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <img src="assets/logo.png" alt="Sopirmu Logo" class="navbar-logo" />
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fitur.html">Fitur</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="join-driver.html" class="btn-sopir">Daftar Sopir</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section Fitur -->
+  <section class="fitur-section">
+    <h1>Fitur Aplikasi Sopirmu</h1>
+    <div class="fitur-grid">
+      <div class="fitur-card">
+        <h3>🚕 Pemesanan Kendaraan</h3>
+        <p>Pesan motor atau mobil dengan mudah sesuai kebutuhan harianmu.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>🧭 Tracking Realtime</h3>
+        <p>Lacak posisi sopir secara langsung dari aplikasi penumpang.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>💼 Dompet Digital</h3>
+        <p>Simpan saldo, top up, dan kelola pembayaran langsung dari aplikasi.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>📄 Riwayat Perjalanan</h3>
+        <p>Lihat riwayat order lengkap dengan status dan detail perjalanan.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>🧾 Pembayaran Fleksibel</h3>
+        <p>Bayar dengan QRIS, e-wallet, atau uang tunai sesuai pilihanmu.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>👤 Profil Pengguna</h3>
+        <p>Atur data pribadi, kontak, dan preferensi kendaraan dengan mudah.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sopirmu.com | PT Sopirmu Teknologi Nusantara<br />
+    Jl. Nusa Indah No.58, Condongcatur, DIY Yogyakarta 55281<br />
+    📧 support@sopirmu.com | 📞 0809-5140-38299
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+/* ========== GLOBAL ========== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #33cae893;
+  background-image: url('../assets/background-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: #285d91;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: #007bff;
+}
+
+.btn-sopir {
+  background-color: #007bff;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-sopir:hover {
+  background-color: #005ecb;
+}
+
+/* ==== Menu Toggle Mobile ==== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ========== HEADER HERO ========== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem 2rem;
+}
+
+header img.logo {
+  width: 300px;
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  font-size: 0.5rem;
+  margin: 0;
+  color: #2e2e2e;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.store-buttons img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* ========== ANIMASI ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== KENDARAAN SECTION ========== */
+.car-section {
+  position: relative;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(360deg, #097590, #0962b1d2, #e5eaf0bf, #02ebebb6);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  border: 1px solid rgba(2, 64, 67, 0.488);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.car-section h1 {
+  color: #e6dfdf;
+  margin: 1rem 0 2rem;
+  font-size: 1.8rem;
+}
+
+.vehicle-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vehicle-icons img.vehicle {
+  width: 160px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+.car-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.car-card {
+  background: #ffffffb9;
+  border: 1px solid #f0f0f073;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 260px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.car-card h3 {
+  color: #007bff;
+  margin: 1rem 0 0.5rem;
+}
+
+.car-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.car-card .price {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #0e0f0f;
+}
+
+.car-card .service-icon {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 0.8rem;
+}
+
+/* ========== FORM SECTION (JOIN DRIVER) ========== */
+.form-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+.form-logo {
+  width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.form-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.driver-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.driver-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.driver-btn:hover {
+  background-color: #005ecb;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  background-color: #001f3f;
+  color: white;
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+  header img.logo {
+    width: 140px;
+  }
+
+  .store-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .vehicle-icons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .car-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .car-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .driver-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
