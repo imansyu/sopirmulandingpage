@@ -11,7 +11,6 @@ landingpage/
 │
 ├── css/
 │   └── style.css                🎨 File CSS utama (sudah terupdate full)
-│
 
 ├── assets/
 │   ├── logo.png                 🔵 Logo Sopirmu (PNG transparan)
